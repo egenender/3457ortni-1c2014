@@ -52,13 +52,11 @@ interface Ethernet0/1
  full-duplex
 !
 interface Tunnel10 !a R8
- tunnel mode ipip
  ip address 10.31.25.162 255.255.255.252
  tunnel source Ethernet0/1
  tunnel destination 150.38.27.1
 !
 interface Tunnel30 !a R12
- tunnel mode ipip
  ip address 10.31.25.170 255.255.255.252
  tunnel source Ethernet0/1
  tunnel destination 150.38.27.9
@@ -88,8 +86,8 @@ ip route 10.31.25.144 255.255.255.248 Tunnel30 10.31.25.169 100
 ip route 20.26.29.0 255.255.255.0 Tunnel10 10.31.25.161 100
 ip route 10.31.25.192 255.255.255.224 20.86.15.133 1
 ip route 10.31.25.164 255.255.255.252 Tunnel10 10.31.25.161 100
-ip route 150.38.27.0 255.255.255.252 150.38.27.6 1
-ip route 150.38.27.8 255.255.255.252 150.38.27.6 1
+ip route 150.38.27.0 255.255.255.252 150.38.27.6
+ip route 150.38.27.8 255.255.255.252 150.38.27.6
 !
 !
 !

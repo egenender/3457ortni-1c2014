@@ -60,13 +60,11 @@ router ospf 1
  network 10.31.25.0 0.0.0.127 area 0 ! RED E
 !
 interface Tunnel20 !a R8
- tunnel mode ipip
  ip address 10.31.25.166 255.255.255.252
  tunnel source Ethernet0/1
  tunnel destination 150.38.27.1
 !
 interface Tunnel30 !a R11
- tunnel mode ipip
  ip address 10.31.25.169 255.255.255.252
  tunnel source Ethernet0/1
  tunnel destination 150.38.27.5
@@ -81,8 +79,8 @@ ip route 10.31.25.156 255.255.255.252 Tunnel20 10.31.25.165 100
 ip route 20.26.29.0 255.255.255.0 Tunnel20 10.31.25.165 100
 ip route 20.86.15.128 255.255.255.128 Tunnel30 10.31.25.170 100
 ip route 10.31.25.160 255.255.255.252 Tunnel30 10.31.25.170 100
-ip route 150.38.27.0 255.255.255.252 150.38.27.10 1
-ip route 150.38.27.4 255.255.255.252 150.38.27.10 1
+ip route 150.38.27.0 255.255.255.252 150.38.27.10
+ip route 150.38.27.4 255.255.255.252 150.38.27.10
 !
 !
 !
