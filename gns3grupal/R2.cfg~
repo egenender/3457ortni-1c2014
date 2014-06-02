@@ -1,0 +1,79 @@
+!
+
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R2
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+!
+!
+ip cef
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ description Conexion LAN Red B
+ ip address 20.86.15.2 255.255.255.224
+ full-duplex
+!
+interface FastEthernet1/0
+ description Conexion LAN Red C
+ ip address 10.31.25.130 255.255.255.240
+ full-duplex
+!
+interface FastEthernet2/0
+ description Conexion LAN Red C
+ ip address 201.158.15.6 255.255.255.128
+ full-duplex
+!
+
+ip route 0.0.0.0 0.0.0.0 20.86.15.2
+
+ip http server
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+ login
+!
+!
+end
