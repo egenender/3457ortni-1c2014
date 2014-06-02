@@ -23,3 +23,7 @@
 \contentsline {subsubsection}{\numberline {1.4.5}R17}{16}
 \contentsline {section}{\numberline {2}Frame Relay}{17}
 \contentsline {subsection}{\numberline {2.1}FR}{17}
+\contentsline {section}{\numberline {3}VRRP}{17}
+\contentsline {subsection}{\numberline {3.1}Configuraci\IeC {\'o}n de los Routers}{17}
+\contentsline {paragraph}{R4}{17}
+\contentsline {paragraph}{R5}{18}
