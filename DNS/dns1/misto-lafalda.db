@@ -1,0 +1,14 @@
+@	IN	SOA	ns1.lafalda.cordoba.dc.fi.uba.ar. admin.ns1.lafalda.cordoba.dc.fi.uba.ar. (
+                        3		; numero de serie
+                        604800	;refresco
+                        86400		;reintento
+                        2419200	;caducidad
+                        604800 	;TTL predeterminado
+)
+@	IN	NS	ns1.lafalda.cordoba.dc.fi.uba.ar.
+;
+; Red Misto
+;
+01	IN	A	192.168.0.11
+16	IN	A	192.168.0.16
+c	IN	A	192.168.0.17

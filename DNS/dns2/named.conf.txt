@@ -1,0 +1,20 @@
+options {
+    allow-recursion { any; };
+};
+
+controls {
+	inet 127.0.0.1 port 953 allow {127.0.0.1;} keys {rndc-key;};
+};
+
+zone "naranjero.calamuchita.cordoba.dc.fi.uba.ar" {
+    type master;
+    file "/etc/bind/naranjero-calamuchita.db";
+};
+
+
+zone "cordoba.dc.fi.uba.ar" {
+	type forward;
+	forwarders { 192.168.0.101; };
+};
+
+include "/etc/bind/rndc.key";

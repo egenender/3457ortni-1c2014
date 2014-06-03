@@ -1,0 +1,15 @@
+@	IN	SOA		ns2.calamuchita.cordoba.dc.fi.uba.ar. admin.ns2.calamuchita.cordoba.dc.fi.uba.ar. {
+                        3		; numero de serie
+                        604800	;refresco
+                        86400		;reintento
+                        2419200	;caducidad
+                        604800 	;TTL predeterminado
+}
+@	IN	NS	ns2.calamuchita.cordoba.dc.fi.uba.ar
+
+;Tramo 16
+
+01	IN	A
+...
+16	IN	A
+
