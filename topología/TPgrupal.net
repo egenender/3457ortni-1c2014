@@ -207,6 +207,7 @@ version = 0.8.3
         2 = access 1 R2 e0/0
         3 = access 1 R4 e0/0
         4 = access 1 R5 e0/0
+        5 = access 1 nio_linux_eth:tap0
         x = -27.9020202534
         y = -301.553390594
         z = 1.0
@@ -232,6 +233,7 @@ version = 0.8.3
     [[ETHSW SW11]]
         1 = access 1 R10 e1/1
         2 = access 1 R11 e0/0
+        3 = access 1 nio_linux_eth:tap1
         x = 512.864573776
         y = 189.504617358
         z = 1.0
@@ -770,3 +772,23 @@ version = 0.8.3
         x = 55.7231384041
         y = 50.51122532
         interface = SW11 1
+    [[NOTE 87]]
+        text = nio_linux_eth:tap0
+         x = -27.9020202534
+         y = -321.553390594
+        interface = HostA nio_linux_eth:tap0
+    [[NOTE 88]]
+        text = nio_linux_eth:tap1
+         x = 532.864573776
+         y = 219.504617358
+        interface = HostB nio_linux_eth:tap1
+    [[Cloud HostA]]
+         x = -27.9020202534
+         y = -331.553390594
+         z = 1.0
+         connections = SW3:5:nio_linux_eth:tap0
+    [[Cloud HostB]]
+        x = 532.864573776
+        y = 219.504617358
+        z = 1.0
+         connections = SW11:3:nio_linux_eth:tap1
