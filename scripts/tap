@@ -5,9 +5,42 @@ sudo openvpn --remote IP-FISICA-REMOTA --port PUERTO --dev tap0 --ifconfig IP-VI
 
 
 Host A:
-sudo openvpn --remote 157.92.50.68 --port 1200 --dev tap0 --ifconfig 10.134.5.140 255.255.255.128 201.158.15.2
+sudo openvpn --remote 157.92.50.68 --port 1200 --dev tap0 --ifconfig 10.134.5.140 255.255.255.240 201.158.15.2
 sudo openvpn --remote 157.92.48.231 --port 1200 --dev tap0 --ifconfig 201.158.15.2 255.255.255.128 10.134.5.140
 
 Host B:
-sudo openvpn --remote 157.92.50.68 --port 1201 --dev tap1 --ifconfig 10.134.5.140 255.255.255.128 20.86.15.129
+sudo openvpn --remote 157.92.50.68 --port 1201 --dev tap1 --ifconfig 10.134.5.140 255.255.255.240 20.86.15.129
 sudo openvpn --remote 157.92.48.231 --port 1201 --dev tap1 --ifconfig 20.86.15.129 255.255.255.128 10.134.5.140
+
+Host C:
+sudo openvpn --remote 157.92.50.68 --port 1202 --dev tap2 --ifconfig 10.134.5.140 255.255.255.240 20.86.15.34
+sudo openvpn --remote 157.92.48.231 --port 1202 --dev tap2 --ifconfig 20.86.15.34 255.255.255.224 10.134.5.140
+
+DNS-ROOT:
+sudo openvpn --remote 157.92.50.68 --port 1203 --dev tap3 --ifconfig 10.134.5.140 255.255.255.240 20.64.73.3
+sudo openvpn --remote 157.92.48.231 --port 1203 --dev tap3 --ifconfig 20.64.73.3 255.255.255.0 10.134.5.140
+
+DNS-1:
+sudo openvpn --remote 157.92.50.68 --port 1204 --dev tap4 --ifconfig 10.134.5.140 255.255.255.240 10.31.25.3
+sudo openvpn --remote 157.92.48.231 --port 1204 --dev tap4 --ifconfig 10.31.25.3 255.255.255.128 10.134.5.140
+
+DNS-2:
+sudo openvpn --remote 157.92.50.68 --port 1205 --dev tap5 --ifconfig 10.134.5.140 255.255.255.240 10.31.25.194
+sudo openvpn --remote 157.92.48.231 --port 1205 --dev tap5 --ifconfig 10.31.25.194 255.255.255.224 10.134.5.140
+
+WebServer:
+sudo openvpn --remote 157.92.50.68 --port 1206 --dev tap6 --ifconfig 10.134.5.140 255.255.255.240 201.158.15.1
+sudo openvpn --remote 157.92.48.231 --port 1206 --dev tap6 --ifconfig 201.158.15.1 255.255.255.128 10.134.5.140
+
+FtpServer:
+sudo openvpn --remote 157.92.50.68 --port 1207 --dev tap7 --ifconfig 10.134.5.140 255.255.255.240 10.31.25.1
+sudo openvpn --remote 157.92.48.231 --port 1207 --dev tap7 --ifconfig 10.31.25.1 255.255.255.128 10.134.5.140
+
+TelServer-1:
+sudo openvpn --remote 157.92.50.68 --port 1208 --dev tap8 --ifconfig 10.134.5.140 255.255.255.240 20.26.29.129
+sudo openvpn --remote 157.92.48.231 --port 1208 --dev tap8 --ifconfig 20.26.29.129 255.255.255.0 10.134.5.140
+
+TelServer-2:
+sudo openvpn --remote 157.92.50.68 --port 1209 --dev tap9 --ifconfig 10.134.5.140 255.255.255.240 20.86.15.130
+sudo openvpn --remote 157.92.48.231 --port 1209 --dev tap9 --ifconfig 20.86.15.130 255.255.255.128 10.134.5.140
+
