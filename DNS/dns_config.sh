@@ -13,7 +13,7 @@ then
 elif [ "$DNS_NAME" == "dns2"  ]
 then
 	HOST_IP="10.31.25.194"
-elif [ "$DNS_NAME" == "dnsroot"  ]
+elif [ "$DNS_NAME" == "root"  ]
 then
 	HOST_IP="20.64.73.3"
 else
@@ -22,10 +22,10 @@ else
 fi
 	
 function import {
-    echo "Vaciando la carpeta /etc/bind/..."
-    sudo rm /etc/bind/*
-	
-    echo "Verificando si hacen falta bind.keys y rndc.key.."
+
+  #  echo "Vaciando la carpeta /etc/bind/..."
+  #  sudo rm /etc/bind/*
+  #  echo "Verificando si hacen falta bind.keys y rndc.key.."
     cd $DNS_NAME
  
     echo "Copiando el contenido en la carpeta /etc/bind/..."
@@ -41,7 +41,7 @@ function import {
     echo "domain cordoba.dc.fi.uba.ar" >> /etc/resolv.conf
     echo "search cordoba.dc.fi.uba.ar" >> /etc/resolv.conf
     echo "nameserver 127.0.0.1" >> /etc/resolv.conf
-    echo "nameserver ${HOST_IP}" >> /etc/resolv.conf #DNS2
+    echo "nameserver ${HOST_IP}" >> /etc/resolv.conf
     sudo chmod 644 /etc/resolv.conf
 
     echo "Reiniciando bind9 con la nueva configuracion..."

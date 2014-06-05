@@ -1,0 +1,39 @@
+@	IN	SOA	ns1.lafalda.cordoba.dc.fi.uba.ar. admin.ns1.lafalda.cordoba.dc.fi.uba.ar. (
+                        5		; numero de serie
+                        604800	;refresco
+                        86400		;reintento
+                        2419200	;caducidad
+                        604800 	;TTL predeterminado
+)
+@	IN	NS	ns1.lafalda.cordoba.dc.fi.uba.ar.
+
+32/27	IN  	NS  	ns1.lafalda.cordoba.dc.fi.uba.ar.
+64/26	IN  	NS  	ns1.lafalda.cordoba.dc.fi.uba.ar.
+
+2	IN	CNAME   2.0/25
+
+;;; Faisan
+; Routers
+33	IN	CNAME	33.32/27
+35	IN	CNAME	35.32/27
+; HOST C
+34	IN	CNAME	34.32/27
+; bloque de 16 hosts
+36	IN	CNAME	36.32/27
+; ...
+51	IN	CNAME	51.32/27
+
+;;; Jilguero
+65	IN	CNAME	65.64/26
+66	IN	CNAME	66.64/26
+67	IN	CNAME	67.64/26
+68	IN	CNAME	68.64/26
+; Bloque 25 hosts
+69	IN	CNAME	69.64/26
+; ...
+93	IN	CNAME	93.64/26
+; Bloque 14 hosts
+94	IN	CNAME	94.64/26
+; ...
+107	IN	CNAME	107.64/26
+

@@ -1,0 +1,15 @@
+@	IN	SOA	ns1.lafalda.cordoba.dc.fi.uba.ar. admin.ns1.lafalda.cordoba.dc.fi.uba.ar. (
+                        5		; numero de serie
+                        604800	;refresco
+                        86400		;reintento
+                        2419200	;caducidad
+                        604800 	;TTL predeterminado
+)
+@	IN	NS	ns1.lafalda.cordoba.dc.fi.uba.ar.
+
+; Routers
+145	IN	PTR	r15.kiwi.lafalda.cordoba.dc.fi.uba.ar.
+; Bloque de 5 hosts
+146	IN	PTR	001.kiwi.lafalda.cordoba.dc.fi.uba.ar.
+; ...
+150	IN	PTR	005.kiwi.lafalda.cordoba.dc.fi.uba.ar.
