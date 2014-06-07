@@ -481,21 +481,25 @@ version = 0.8.3
         width = 248.0
         height = 266.0
         border_style = 2
+        z = -1.0
     [[SHAPE 2]]
         type = rectangle
         x = -864.0
         y = 88.0
         width = 1490.0
         height = 302.0
+        z = -1.0
     [[SHAPE 3]]
         type = rectangle
         x = -864.0
         y = -160.277128573
         width = 1490.0
         height = 242.277128573
+        z = -1.0
     [[SHAPE 4]]
         type = rectangle
         x = -864.0
         y = -495.867965644
         width = 1487.78174593
         height = 327.867965644
+        z = -1.0
