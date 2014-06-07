@@ -32,7 +32,7 @@ route add -net 10.31.25.160 netmask 255.255.255.252 gw 20.86.15.132 metric 1
 route add -net 10.31.25.164 netmask 255.255.255.252 gw 20.86.15.132 metric 1
 route add -net 10.31.25.168 netmask 255.255.255.252 gw 20.86.15.132 metric 1
 
-echo "Host A esta en el dominio de DNS2"
+echo "Host B esta en el dominio de DNS2"
 sudo chattr -i /etc/resolv.conf
 sudo chmod 777 /etc/resolv.conf
 echo "Agregando la direccion IP de DNS al archivo /etc/resolv.conf..."

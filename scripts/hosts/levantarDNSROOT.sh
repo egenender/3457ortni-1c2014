@@ -33,13 +33,6 @@ route add -net 10.31.25.164 netmask 255.255.255.252 gw 20.64.73.4 metric 1
 route add -net 10.31.25.168 netmask 255.255.255.252 gw 20.64.73.4 metric 1
 
 
-
-
-IP=$1
-
-echo "Configuracion de VPN:"
-openvpn --remote $IP --port 1203 --dev tap3 --ifconfig 20.64.73.3 255.255.255.0 10.134.5.140
-
 HOST_IP="20.64.73.3"
 	
 function import {
