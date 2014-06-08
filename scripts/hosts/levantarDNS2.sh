@@ -4,9 +4,9 @@ IP=$1
 
 openvpn --remote $IP --port 1205 --dev tap5 --ifconfig 10.31.25.194 255.255.255.224 10.134.5.140 &
 
-sleep 5
+sleep 25
 
-route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.31.25.193 metric 1
+route add default gw 10.31.25.193 metric 1
 
 
 HOST_IP="10.31.25.194"
@@ -44,6 +44,6 @@ function import {
 ##### MAIN #####
 
 echo "DNS: Importando nuestros archivos de configuracion..."
-import
+#import
 echo "DNS: Importación finalizada!"
 exit 0
