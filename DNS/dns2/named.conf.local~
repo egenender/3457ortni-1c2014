@@ -1,0 +1,142 @@
+zone "capital.cordoba.dc.fi.uba.ar" in {
+  type master;
+  file "/etc/bind/db.capital";
+};
+
+zone "calamuchita.cordoba.dc.fi.uba.ar" in {
+  type master;
+  file "/etc/bind/db.calamuchita";
+};
+
+
+zone "15.158.201.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.aguila.rev";
+};
+
+zone "0/27.15.86.20.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.buitre.rev";
+};
+
+zone "128/28.25.31.10.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.cuervo.rev";
+};
+
+zone "73.64.20.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.dodo.rev";
+};
+
+zone "152/30.25.31.10.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.golondrina.rev";
+};
+
+zone "156/30.25.31.10.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.hornero.rev";
+};
+
+zone "192/30.3.40.151.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.ibis1.rev";
+};
+
+zone "196/30.3.40.151.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.ibis2.rev";
+};
+
+zone "200/30.3.40.151.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.ibis3.rev";
+};
+
+zone "204/30.3.40.151.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.ibis4.rev";
+};
+
+zone "208/30.3.40.151.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.ibis5.rev";
+};
+
+zone "212/30.3.40.151.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.ibis6.rev";
+};
+
+zone "216/30.3.40.151.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.ibis7.rev";
+};
+
+zone "220/30.3.40.151.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.ibis8.rev";
+};
+
+zone "224/30.3.40.151.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.ibis9.rev";
+};
+
+zone "228/30.3.40.151.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.ibis10.rev";
+};
+
+zone "29.26.20.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.lechuza.rev";
+};
+
+zone "128/25.15.86.20.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.mero1.rev";
+};
+
+zone "192/27.25.31.10.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.mero2.rev";
+};
+
+zone "160/30.25.31.10.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.negron.rev";
+};
+
+zone "164/30.25.31.10.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.ortega.rev";
+};
+
+zone "168/30.25.31.10.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.paloma.rev";
+};
+
+zone "0/30.27.38.150.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.quebrantahuesos1.rev";
+};
+
+zone "4/30.27.38.150.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.quebrantahuesos2.rev";
+};
+
+zone "8/30.27.38.150.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.quebrantahuesos3.rev";
+};
+
+zone "in-addr.arpa" in {
+  type forward;
+  forwarders { 20.64.73.3; };
+};
+
+

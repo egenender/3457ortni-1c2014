@@ -1,0 +1,35 @@
+$TTL	604800
+@	IN	SOA	ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar. root. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	        IN	NS	ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.
+;ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.	IN	A	10.31.25.194 ; DNS 2
+
+; aguila
+web.aguila	IN	A	201.158.15.1
+a.aguila	IN	A	201.158.15.2
+r2.aguila	IN	A	201.158.15.5
+r3.aguila	IN	A	201.158.15.6
+r4.aguila	IN	A	201.158.15.3
+r5.aguila	IN	A	201.158.15.4
+virtual.aguila	IN	A	201.158.15.7
+
+; buitre
+r1.buitre	IN	A	20.86.15.1
+r3.buitre	IN	A	20.86.15.2
+
+; cuervo
+r1.cuervo	IN	A	10.31.25.129
+r3.cuervo	IN	A	10.31.25.130
+
+; dodo
+nsroot.dodo	IN	A	192.168.0.102 ; DNS ROOT
+r4.dodo		IN	A	20.64.73.2
+r5.dodo		IN	A	20.64.73.1
+r8.dodo		IN	A	20.64.73.4
+virtual.dodo	IN	A	20.64.73.5
+
