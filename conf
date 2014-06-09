@@ -1,0 +1,55 @@
+obtener IPs fisicas de todas las maquinas que se van a utilizar.
+Decidir qué se va a ejecutar en cada una de ellas. Armar una tablita así:
+
+IP		FUNCION
+
+192.168.0.102 	hosts
+192.168.0.102 	dns-root
+192.168.0.104 	dns2
+192.168.0.105 	dns1
+192.168.0.109 	servers
+
+192.168.0.107 	gns3
+
+
+Ya puede ejecutarse en el server el comando:
+sudo levantarServer.sh
+
+Y arrancar la topologia del GNS3.
+
+
+Ejecutar en la maquina DNS root el comando:
+sudo levantarDNSROOT.sh
+
+En la DNS1:
+sudo levantarDNS1.sh
+
+En la DNS2:
+sudo levantarDNS2.sh
+
+Ejecutar en la maquina Host el comando:
+sudo levantarHostX.sh
+donde X es A, B o C, correspondiendose al Host a levantar.
+
+Ejecutar en la maquina de servers el comando:
+sudo levantarServicio.sh
+donde Servicio es WebServer, TelServer o FtpServer
+
+
+Desde todas las maquinas remotas a GNS3 puede probar conectividad mediante el comando:
+pings.sh tapX
+
+
+Tenga presente las IPs de estos dispositivos dentro de la topologia:
+
+201.158.15.2	Host A
+20.86.15.129	Host B
+20.86.15.34		Host C
+20.64.73.3		DNS Root
+10.31.25.3		DNS1
+10.31.25.194	DNS2
+201.158.15.1	WebServer
+10.31.25.1		FtpServer
+20.26.29.129	TelServer 1
+20.86.15.130	TelServer 2
+
