@@ -1,0 +1,25 @@
+$TTL	86400
+@	IN	SOA	nsroot.dodo.capital root. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			  86400 )	; Negative Cache TTL
+;
+
+@	                      IN    NS   nsroot.dodo.capital
+nsroot.dodo.capital   IN    A    20.64.73.3 ; DNS ROOT
+
+lafalda                IN    NS    ns1.espatula.lafalda
+ns1.espatula.lafalda   IN    A     10.31.25.3 ; DNS 1
+
+capital            	IN    NS    ns2.mero2.calamuchita
+calamuchita        	IN    NS    ns2.mero2.calamuchita
+ns2.mero2.calamuchita	IN    A     10.31.25.194 ; DNS 2
+
+; alias
+nsroot       IN    CNAME    nsroot.dodo.capital
+ns1          IN    CNAME    ns1.espatula.lafalda
+ns2          IN    CNAME    ns2.mero2.calamuchita
+
+

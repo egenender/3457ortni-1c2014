@@ -1,0 +1,42 @@
+$TTL	604800
+@	IN	SOA	nsroot.dodo.capital.cordoba.dc.fi.uba.ar. root. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@                      IN    NS       nsroot.dodo.capital.cordoba.dc.fi.uba.ar.
+
+192/30			IN	NS	ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.  ; ibis1 (calamuchita PPP)
+$GENERATE 192-195  $	IN	CNAME	$.192/30
+
+196/30			IN	NS	ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.  ; ibis2 (calamuchita PPP)
+$GENERATE 196-199  $	IN	CNAME	$.196/30
+
+200/30			IN	NS	ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.  ; ibis3 (calamuchita PPP)
+$GENERATE 200-203  $	IN	CNAME	$.200/30
+
+204/30			IN	NS	ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.  ; ibis4 (calamuchita PPP)
+$GENERATE 204-207  $	IN	CNAME	$.204/30
+
+208/30			IN	NS	ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.  ; ibis5 (calamuchita PPP)
+$GENERATE 208-211  $	IN	CNAME	$.208/30
+
+212/30			IN	NS	ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.  ; ibis6 (calamuchita PPP)
+$GENERATE 212-215  $	IN	CNAME	$.212/30
+
+216/30			IN	NS	ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.  ; ibis7 (calamuchita PPP)
+$GENERATE 216-219  $	IN	CNAME	$.216/30
+
+220/30			IN	NS	ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.  ; ibis8 (calamuchita PPP)
+$GENERATE 220-223  $	IN	CNAME	$.220/30
+
+224/30			IN	NS	ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.  ; ibis9 (calamuchita PPP)
+$GENERATE 224-227  $	IN	CNAME	$.224/30
+
+228/30			IN	NS	ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.  ; ibis10 (calamuchita PPP)
+$GENERATE 228-231  $	IN	CNAME	$.228/30
+
+
+
