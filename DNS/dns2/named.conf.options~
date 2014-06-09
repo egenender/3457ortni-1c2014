@@ -1,14 +1,18 @@
 options {
 	directory "/var/cache/bind";
+	
+	allow-recursion { any; };
 
         allow-query {
           any;
         };
 
-        listen-on {
-          127.0.0.1;
-          192.168.0.104; // DNS 2
-        };
+	allow-query-cache {none;};
+
+        // listen-on {
+        //  127.0.0.1;
+        //  10.31.25.194; // DNS 2
+        // };
 
 	// If there is a firewall between you and nameservers you want
 	// to talk to, you may need to fix the firewall to allow multiple

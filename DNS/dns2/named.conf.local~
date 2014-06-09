@@ -134,5 +134,9 @@ zone "8/30.27.38.150.in-addr.arpa" in {
   file "/etc/bind/db.quebrantahuesos3.rev";
 };
 
+zone "in-addr.arpa" in {
+  type forward;
+  forwarders { 20.64.73.3; };
+};
 
 
