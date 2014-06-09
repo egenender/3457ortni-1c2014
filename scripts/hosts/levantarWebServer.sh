@@ -1,10 +1,12 @@
 #!/bin/bash
 
+./finalizarVPNs.sh
+
 IP=$1
 
 openvpn --remote $IP --port 1206 --dev tap6 --ifconfig 201.158.15.1 255.255.255.128 10.134.5.140 &
 
-sleep 5
+sleep 25
 
 route add -net 20.86.15.0 netmask 255.255.255.224 gw 201.158.15.6 metric 1
 route add -net 10.31.25.128 netmask 255.255.255.240 gw 201.158.15.6 metric 1
