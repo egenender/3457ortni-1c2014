@@ -1,0 +1,27 @@
+options {
+	directory "/var/cache/bind";	
+
+        allow-query {
+          any;
+        };
+
+	allow-query-cache {none;};
+
+	allow-recursion { any; };
+
+        //listen-on {
+	//	any;
+          //127.0.0.1;
+          //10.31.25.3; // DNS 1
+        //};
+
+	
+
+	forwarders {
+		20.64.73.3; // DNS ROOT
+	};
+
+
+	auth-nxdomain no;    # conform to RFC1035
+};
+
