@@ -1,0 +1,32 @@
+//
+// Local configuration
+//
+
+zone "lafalda.cordoba.dc.fi.uba.ar" in {
+  type master;
+  file "/etc/bind/db.lafalda";
+};
+
+zone "0/25.25.31.10.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.espatula.rev";
+};
+
+zone "32/27.15.86.20.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.faisan.rev";
+};
+
+zone "64/26.15.86.20.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.jilguero.rev";
+};
+
+zone "144/29.25.31.10.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.kiwi.rev";
+};
+
+
+
+
