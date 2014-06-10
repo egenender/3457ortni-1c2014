@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.3)  10 JUN 2014 12:54
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.3)  10 JUN 2014 13:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -493,10 +493,10 @@ Overfull \hbox (39.45514pt too wide) in paragraph at lines 11--74
 [][] 
  []
 
-[29] [30] [31] [32] [33]) (./openvpn.tex
+[29] [30] [31] [32]) (./openvpn.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
-) [34] (./anexos.tex
+ [33]) [34] (./anexos.tex
 <topologia.jpeg, id=120, 618.05907pt x 465.99094pt>
 File: topologia.jpeg Graphic file (type jpg)
  <use topologia.jpeg>
@@ -525,10 +525,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2875 strings out of 495059
- 38958 string characters out of 3182030
+ 2876 strings out of 495059
+ 38966 string characters out of 3182030
  131262 words of memory out of 3000000
- 5996 multiletter control sequences out of 15000+200000
+ 5997 multiletter control sequences out of 15000+200000
  10099 words of font info for 36 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  38i,8n,32p,636b,339s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -541,7 +541,7 @@ nts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmtt12.pfb>
-Output written on informe.pdf (37 pages, 674146 bytes).
+Output written on informe.pdf (37 pages, 674155 bytes).
 PDF statistics:
  169 PDF objects out of 1000 (max. 8388607)
  113 compressed objects within 2 object streams

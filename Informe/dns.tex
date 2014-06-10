@@ -4,7 +4,7 @@
 
 Para la realización del trabajo práctico es necesario implementar el servicio de DNS, dividido en las distintas sedes de la topología, para así poder traducir nombres a direcciones IP (para permitir la comunicación) o viceversa (por ejemplo, para el uso de traceroute). \\ 
 
-Se dispone de tres servidores DNS, uno de primer nivel (DNS root) y dos de segundo nivel (llamados DNS 1 y DNS 2). El DNS 1 tiene autoridad sobre la sede La Falda y el DNS 2 sobre el resto de la red (sedes Calamuchita y Córdoba Capital). Los hosts que deseen traducir un nombre o una IP deben consultar al servidor DNS de segundo nivel que corresponda a su zona. En caso de que dicho servidor pueda realizar la traducción, transmite la consulta hacia el DNS Root. \\
+Se dispone de tres servidores DNS, uno de primer nivel (DNS root) y dos de segundo nivel (llamados DNS 1 y DNS 2). El DNS 1 tiene autoridad sobre la sede La Falda y el DNS 2 sobre el resto de la red (sedes Calamuchita y Córdoba Capital). Los hosts que deseen traducir un nombre o una IP deben consultar al servidor DNS de segundo nivel que corresponda a su zona. En caso de que dicho servidor no pueda realizar la traducción, transmite la consulta hacia el DNS Root. \\
 
 \subsection{Nombres de dominio de redes}
 
@@ -237,12 +237,6 @@ Se dispone de tres servidores DNS, uno de primer nivel (DNS root) y dos de segun
 	\hline
 	r9.ibis3.calamuchita & R9 & s1/0.1 & 151.40.3.202 \\
 	\hline
-\end{tabular}
-\newpage
-\begin{tabular}{|c|c|c|c|c|}
-	\hline
-	Nombre & Dispositivo & Interfaz & Dirección \\
-	\hline
 
 	\hline
 	r2.ibis4.calamuchita & R2 & s1/0.4 & 151.40.3.205 \\
@@ -260,6 +254,13 @@ Se dispone de tres servidores DNS, uno de primer nivel (DNS root) y dos de segun
 	r17.ibis6.calamuchita & R17 & s1/0.3 & 151.40.3.213 \\
 	\hline
 	r9.ibis6.calamuchita & R9 & s1/0.2 & 151.40.3.214 \\
+	\hline
+
+\end{tabular}
+\newpage
+\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	Nombre & Dispositivo & Interfaz & Dirección \\
 	\hline
 
 	\hline
@@ -331,9 +332,7 @@ Se dispone de tres servidores DNS, uno de primer nivel (DNS root) y dos de segun
 	\hline
 	r11.negron.calamuchita & R11 & Tunnel10 & 10.31.25.162 \\
 	\hline
-\end{tabular}
-\newpage
-\begin{tabular}{|c|c|c|c|c|}
+
 	\hline
 	Nombre & Dispositivo & Interfaz & Dirección \\
 	\hline

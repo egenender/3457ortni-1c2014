@@ -89,7 +89,7 @@ ip route 150.38.27.4 255.255.255.252 150.38.27.10 1
 \end{verbatim}
 
 \subsubsection{Internet y Router-Internet}
-Para la simulación del servicio de Internet se utilizó un Router C3600, para luego utilizar túneles GRE para permitir el enrutamiento de direcciones privadas, entre distintos routers que se encuentren conectados por medio de Internet. Para realizar la configuración se baso en el apunte de la materia.\\
+Para la simulación del servicio de Internet se utilizó un Router C3600, para luego utilizar túneles GRE y permitir el enrutamiento de direcciones privadas, entre distintos routers que se encuentren conectados por medio de Internet. Para realizar la configuración se baso en el apunte de la materia.\\
 Para cada conexión hacia Internet (de los Routers antes mencionados), se destinaron 3 subredes de máscara /30, para luego asignar una subred /30 a cada par de conexiones posibles entre los distintos routers.\\
 Lo que finalmente se obtiene, es un encapsulamiento de un paquete IP que tiene como destino una dirección privada dentro de otro paquete IP con direccionamiento público, más la existencia de un encabezado GRE. Los routers donde se configura el túnel son los encargados de manipular estos paquetes, armándolos y desarmándolos según corresponda.
 

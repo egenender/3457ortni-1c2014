@@ -1,5 +1,11 @@
 \section{VRRP}
-Para la realización del trabajo práctico es necesario implementar VRRP en un determinado par de routers para permitir la redundancia (en nuestro caso, entre los routers R4 y R5). Para esto, también es necesario configurar el Object Tracking correspondiente, para poder conocer el estado del otro router (ya sea si el router o alguno de sus enlaces se ha caido).
+Para la realización del trabajo práctico es necesario implementar VRRP en un determinado par de routers para permitir la redundancia (en nuestro caso, entre los routers R4 y R5).
+Para esto, también es necesario configurar el Object Tracking correspondiente, para poder seleccionar el router Master (de acuerdo a la caída de alguno de sus enlaces).
+\\
+En la topología dada, los routers se encuentran entre dos switches, por lo tanto cualquier caída externa a dichos switches no puede ser recuperada mediante VRRP.
+Por lo tanto, se hace Object Tracking sobre las propias interfaces, de modo tal que, si ocurriera la caída de uno de estos, se disminuya la prioridad. De esta manera se seleccionará (en caso de existencia) el router sin enlaces caídos. \\
+Por decición de diseño se le da una prioridad mayor a R4, tal que se asegure que este sea Master si todos sus enlaces están funcionando.
+
 \subsection{Configuración de los Routers}
 \paragraph{R4}
 {\small
