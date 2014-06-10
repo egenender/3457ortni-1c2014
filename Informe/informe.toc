@@ -1,43 +1,51 @@
 \select@language {spanish}
-\contentsline {section}{\numberline {1}Subnetting}{3}
-\contentsline {subsection}{\numberline {1.1}Asignaci\IeC {\'o}n de direcciones IP a las redes}{3}
-\contentsline {subsubsection}{\numberline {1.1.1}Asignaci\IeC {\'o}n IP a routers, servers, hosts}{4}
-\contentsline {subsubsection}{\numberline {1.1.2}Asignaci\IeC {\'o}n IP a routers en Frame Relay}{6}
-\contentsline {subsection}{\numberline {1.2}Tablas de Ruteo de C\IeC {\'o}rdoba}{6}
-\contentsline {subsubsection}{\numberline {1.2.1}R1}{6}
-\contentsline {subsubsection}{\numberline {1.2.2}R2}{7}
-\contentsline {subsubsection}{\numberline {1.2.3}R3}{8}
-\contentsline {subsubsection}{\numberline {1.2.4}R4 y R5 (routers VRRP)}{9}
-\contentsline {subsubsection}{\numberline {1.2.5}R8}{10}
-\contentsline {subsection}{\numberline {1.3}Tablas de Ruteo de Calamuchita}{11}
-\contentsline {subsubsection}{\numberline {1.3.1}R6}{11}
-\contentsline {subsubsection}{\numberline {1.3.2}R7}{12}
-\contentsline {subsubsection}{\numberline {1.3.3}R9}{13}
-\contentsline {subsubsection}{\numberline {1.3.4}R10}{14}
-\contentsline {subsubsection}{\numberline {1.3.5}R11}{15}
-\contentsline {subsection}{\numberline {1.4}Tablas de Ruteo de La Falda}{15}
-\contentsline {subsubsection}{\numberline {1.4.1}R12}{16}
-\contentsline {subsubsection}{\numberline {1.4.2}R13}{16}
-\contentsline {subsubsection}{\numberline {1.4.3}R14 y R15}{16}
-\contentsline {subsubsection}{\numberline {1.4.4}R16}{16}
-\contentsline {subsubsection}{\numberline {1.4.5}R17}{17}
-\contentsline {subsection}{\numberline {1.5}Tablas de Ruteo de Hosts y servicios}{17}
-\contentsline {subsubsection}{\numberline {1.5.1}Host A y Webserver}{17}
-\contentsline {subsubsection}{\numberline {1.5.2}Host B}{19}
-\contentsline {subsubsection}{\numberline {1.5.3}Host C}{20}
-\contentsline {subsubsection}{\numberline {1.5.4}Telserver}{21}
-\contentsline {subsubsection}{\numberline {1.5.5}DNS1 - FTP server}{21}
-\contentsline {subsubsection}{\numberline {1.5.6}DNS2}{22}
-\contentsline {subsubsection}{\numberline {1.5.7}DNS Root}{23}
-\contentsline {section}{\numberline {2}Frame Relay}{24}
-\contentsline {subsection}{\numberline {2.1}FR}{24}
+\contentsline {section}{\numberline {1}Subnetting}{4}
+\contentsline {subsection}{\numberline {1.1}Asignaci\IeC {\'o}n de direcciones IP a las redes}{4}
+\contentsline {subsubsection}{\numberline {1.1.1}Asignaci\IeC {\'o}n IP a routers, servers, hosts}{5}
+\contentsline {subsubsection}{\numberline {1.1.2}Asignaci\IeC {\'o}n IP a routers en Frame Relay}{7}
+\contentsline {subsection}{\numberline {1.2}Tablas de Ruteo de C\IeC {\'o}rdoba}{7}
+\contentsline {subsubsection}{\numberline {1.2.1}R1}{7}
+\contentsline {subsubsection}{\numberline {1.2.2}R2}{8}
+\contentsline {subsubsection}{\numberline {1.2.3}R3}{9}
+\contentsline {subsubsection}{\numberline {1.2.4}R4 y R5 (routers VRRP)}{10}
+\contentsline {subsubsection}{\numberline {1.2.5}R8}{11}
+\contentsline {subsection}{\numberline {1.3}Tablas de Ruteo de Calamuchita}{12}
+\contentsline {subsubsection}{\numberline {1.3.1}R6}{12}
+\contentsline {subsubsection}{\numberline {1.3.2}R7}{13}
+\contentsline {subsubsection}{\numberline {1.3.3}R9}{14}
+\contentsline {subsubsection}{\numberline {1.3.4}R10}{15}
+\contentsline {subsubsection}{\numberline {1.3.5}R11}{16}
+\contentsline {subsection}{\numberline {1.4}Tablas de Ruteo de La Falda}{16}
+\contentsline {subsubsection}{\numberline {1.4.1}R12}{17}
+\contentsline {subsubsection}{\numberline {1.4.2}R13}{17}
+\contentsline {subsubsection}{\numberline {1.4.3}R14 y R15}{17}
+\contentsline {subsubsection}{\numberline {1.4.4}R16}{17}
+\contentsline {subsubsection}{\numberline {1.4.5}R17}{18}
+\contentsline {subsection}{\numberline {1.5}Tablas de Ruteo de Hosts y servicios}{18}
+\contentsline {subsubsection}{\numberline {1.5.1}Host A y Webserver}{18}
+\contentsline {subsubsection}{\numberline {1.5.2}Host B}{20}
+\contentsline {subsubsection}{\numberline {1.5.3}Host C}{21}
+\contentsline {subsubsection}{\numberline {1.5.4}Telserver}{22}
+\contentsline {subsubsection}{\numberline {1.5.5}DNS1 - FTP server}{22}
+\contentsline {subsubsection}{\numberline {1.5.6}DNS2}{23}
+\contentsline {subsubsection}{\numberline {1.5.7}DNS Root}{24}
+\contentsline {section}{\numberline {2}Frame Relay}{25}
+\contentsline {subsection}{\numberline {2.1}FR}{25}
 \contentsline {section}{\numberline {3}T\IeC {\'u}neles GRE}{25}
 \contentsline {subsection}{\numberline {3.1}Configuraci\IeC {\'o}n}{25}
 \contentsline {subsubsection}{\numberline {3.1.1}R8}{25}
-\contentsline {subsubsection}{\numberline {3.1.2}R11}{25}
+\contentsline {subsubsection}{\numberline {3.1.2}R11}{26}
 \contentsline {subsubsection}{\numberline {3.1.3}R12}{26}
-\contentsline {subsubsection}{\numberline {3.1.4}Internet y Router-Internet}{26}
+\contentsline {subsubsection}{\numberline {3.1.4}Internet y Router-Internet}{27}
 \contentsline {section}{\numberline {4}VRRP}{28}
 \contentsline {subsection}{\numberline {4.1}Configuraci\IeC {\'o}n de los Routers}{28}
 \contentsline {paragraph}{R4}{28}
-\contentsline {paragraph}{R5}{28}
+\contentsline {paragraph}{R5}{29}
+\contentsline {section}{\numberline {5}DNS}{29}
+\contentsline {section}{\numberline {6}OpenVPN}{29}
+\contentsline {subsection}{\numberline {6.1}Servidores}{30}
+\contentsline {subsection}{\numberline {6.2}Clientes}{30}
+\contentsline {section}{\numberline {7}Anexos}{30}
+\contentsline {subsection}{\numberline {7.1}Topolog\IeC {\'\i }a de la Red}{30}
+\contentsline {subsection}{\numberline {7.2}Topolog\IeC {\'\i }a de la Red, con divisi\IeC {\'o}n de Subredes}{31}
+\contentsline {subsection}{\numberline {7.3}Diagrama de Capa 3, con direcciones IP}{32}

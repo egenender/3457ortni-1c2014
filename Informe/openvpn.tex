@@ -1,7 +1,5 @@
 \section{OpenVPN}
-Para realizar el trabajo práctico fue necesario la creación de 9 VPNs\footnote{Los 9 dispositivos son: Host A, Host B, Host C, DNS1, DNS2, DNS Root, Telserver, WebServer y FTPServer}, para poder conectar los distintos dispositivos físicos a la red simulada en GNS3. Notamos que, aunque sólo 5 de éstos servicios estarían en simultáneo utilizándose (los DNSs, alguno de los 3 hosts, y alguno de los servicios), es necesario tener todo configurado para poder cambiar a otro dispositivo (siendo mucho más fácil configurando distintas VPNs).
-
-REVISAR: el telserver no tenía dos taps? serían 10 entonces....
+Para realizar el trabajo práctico fue necesario la creación de 10 VPNs\footnote{Los 10 dispositivos son: Host A, Host B, Host C, DNS1, DNS2, DNS Root, WebServer, FTPServer y Telserver, que cuenta con dos interfaces tap}, para poder conectar los distintos dispositivos físicos a la red simulada en GNS3. Notamos que, aunque sólo 5 de éstos servicios estarían en simultáneo utilizándose (los DNSs, alguno de los 3 hosts, y alguno de los servicios), es necesario tener todo configurado para poder cambiar a otro dispositivo (siendo mucho más fácil configurando distintas VPNs).
 
 \subsection{Servidores}
 Dentro de la PC que corre la topología en GNS3 se tiene a los 9 VPNs ejecutándose en paralelo (en 9 puertos diferentes). Para cada uno de estos se configura la interfaz tap correspondiente. 
