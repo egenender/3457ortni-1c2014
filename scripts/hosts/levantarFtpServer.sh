@@ -33,5 +33,8 @@ route add -net 10.31.25.192 netmask 255.255.255.224 gw 10.31.25.5 metric 1
 route add -net 10.31.25.160 netmask 255.255.255.252 gw 10.31.25.2 metric 1
 route add -net 10.31.25.164 netmask 255.255.255.252 gw 10.31.25.2 metric 1
 route add -net 10.31.25.168 netmask 255.255.255.252 gw 10.31.25.2 metric 1
-	
+
+
+cp vsftpd.conf /etc/
+service vsftpd restart
 	
