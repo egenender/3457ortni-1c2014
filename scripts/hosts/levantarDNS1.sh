@@ -67,6 +67,6 @@ function import {
 ##### MAIN #####
 
 echo "DNS: Importando nuestros archivos de configuracion..."
-#import
+import
 echo "DNS: Importación finalizada!"
 exit 0
