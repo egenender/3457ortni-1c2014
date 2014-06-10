@@ -1,0 +1,13 @@
+$TTL	604800
+@	IN	SOA	ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar. root. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+
+@    IN   NS    ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.
+
+229	IN	PTR	r9.ibis10.calamuchita.cordoba.dc.fi.uba.ar.
+230	IN	PTR	r6.ibis10.calamuchita.cordoba.dc.fi.uba.ar.

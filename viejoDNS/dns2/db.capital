@@ -27,7 +27,7 @@ r1.cuervo	IN	A	10.31.25.129
 r3.cuervo	IN	A	10.31.25.130
 
 ; dodo
-nsroot.dodo	IN	A	20.64.73.3  ; DNS ROOT
+nsroot.dodo	IN	A	20.64.73.3 ; DNS ROOT
 r4.dodo		IN	A	20.64.73.2
 r5.dodo		IN	A	20.64.73.1
 r8.dodo		IN	A	20.64.73.4

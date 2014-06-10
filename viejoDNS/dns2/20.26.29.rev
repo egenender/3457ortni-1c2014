@@ -1,0 +1,24 @@
+@	IN	SOA	ns2.calamuchita.cordoba.dc.fi.uba.ar. admin.ns2.calamuchita.cordoba.dc.fi.uba.ar. (
+                        4111		; numero de serie
+                        604800	;refresco
+                        86400		;reintento
+                        2419200	;caducidad
+                        604800 	;TTL predeterminado
+)
+@	IN	NS	ns2.calamuchita.cordoba.dc.fi.uba.ar.
+
+0/24	IN	NS	ns2.calamuchita.cordoba.dc.fi.uba.ar.
+
+; TELNET
+129	IN	CNAME	129.0/24
+; Routers
+2	IN	CNAME	2.0/24
+1	IN	CNAME	1.0/24
+3	IN	CNAME	3.0/24
+;Bloque 236 hosts
+4	IN	CNAME	4.0/24
+; ...
+128	IN	CNAME	128.0/24
+130	IN	CNAME	130.0/24
+; ...
+240	IN	CNAME	240.0/24

@@ -1,0 +1,32 @@
+@	IN	SOA	ns2.calamuchita.cordoba.dc.fi.uba.ar. admin.ns2.calamuchita.cordoba.dc.fi.uba.ar. (
+                        3		; numero de serie
+                        604800	;refresco
+                        86400		;reintento
+                        2419200	;caducidad
+                        604800 	;TTL predeterminado
+)
+@	IN	NS	ns2.calamuchita.cordoba.dc.fi.uba.ar.
+
+
+; DNS ROOT
+3	IN	PTR	dnsroot.dodo.calamuchita.cordoba.dc.fi.uba.ar.
+; Routers
+2	IN	PTR	r4.dodo.calamuchita.cordoba.dc.fi.uba.ar.
+1	IN	PTR	r5.dodo.calamuchita.cordoba.dc.fi.uba.ar.
+4	IN	PTR	r8.dodo.calamuchita.cordoba.dc.fi.uba.ar.
+;Bloque 8 hosts
+5	IN	PTR	001.dodo.calamuchita.cordoba.dc.fi.uba.ar.
+; ...
+12	IN	PTR	008.dodo.calamuchita.cordoba.dc.fi.uba.ar.
+;Bloque 64 hosts
+13	IN	PTR	009.dodo.calamuchita.cordoba.dc.fi.uba.ar.
+; ...
+76	IN	PTR	072.dodo.calamuchita.cordoba.dc.fi.uba.ar.
+;Bloque 122 hosts
+77	IN	PTR	073.dodo.calamuchita.cordoba.dc.fi.uba.ar.
+; ...
+198	IN	PTR	194.dodo.calamuchita.cordoba.dc.fi.uba.ar.
+;Bloque 24 hosts
+199	IN	PTR	195.dodo.calamuchita.cordoba.dc.fi.uba.ar.
+; ...
+222	IN	PTR	218.dodo.calamuchita.cordoba.dc.fi.uba.ar.

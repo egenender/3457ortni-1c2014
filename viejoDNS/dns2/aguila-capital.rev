@@ -1,0 +1,39 @@
+@	IN	SOA	ns2.calamuchita.cordoba.dc.fi.uba.ar. admin.ns2.calamuchita.cordoba.dc.fi.uba.ar. (
+                        3		; numero de serie
+                        604800	;refresco
+                        86400		;reintento
+                        2419200	;caducidad
+                        604800 	;TTL predeterminado
+)
+@	IN	NS	ns2.calamuchita.cordoba.dc.fi.uba.ar.
+
+; Webserver
+1	IN	PTR	web.aguila.capital.cordoba.dc.fi.uba.ar.
+; Host A
+2	IN	PTR	a.aguila.capital.cordoba.dc.fi.uba.ar.
+; Routers
+5	IN	PTR	r2.aguila.capital.cordoba.dc.fi.uba.ar.
+6	IN	PTR	r3.aguila.capital.cordoba.dc.fi.uba.ar.
+3	IN	PTR	r4.aguila.capital.cordoba.dc.fi.uba.ar.
+4	IN	PTR	r5.aguila.capital.cordoba.dc.fi.uba.ar.
+;Bloque 30 hosts
+7	IN	PTR	001.aguila.capital.cordoba.dc.fi.uba.ar.
+; ...
+36	IN	PTR	030.aguila.capital.cordoba.dc.fi.uba.ar.
+;Bloque 14 hosts
+37	IN	PTR	031.aguila.capital.cordoba.dc.fi.uba.ar.
+; ...
+50	IN	PTR	044.aguila.capital.cordoba.dc.fi.uba.ar.
+;Bloque 34 hosts
+51	IN	PTR	045.aguila.capital.cordoba.dc.fi.uba.ar.
+; ...
+84	IN	PTR	078.aguila.capital.cordoba.dc.fi.uba.ar.
+;Bloque de 24 hosts
+85	IN	PTR	079.aguila.capital.cordoba.dc.fi.uba.ar.
+; ...
+108	IN	PTR	102.aguila.capital.cordoba.dc.fi.uba.ar.
+;Bloque 16 hosts
+109	IN	PTR	103.aguila.capital.cordoba.dc.fi.uba.ar.
+; ...
+124	IN	PTR	118.aguila.capital.cordoba.dc.fi.uba.ar.
+

@@ -1,0 +1,34 @@
+options {
+    allow-recursion { any; };
+};
+
+controls {
+	inet 127.0.0.1 port 953 allow {127.0.0.1;} keys {rndc-key;};
+};
+
+zone "cardenal.lafalda.cordoba.dc.fi.uba.ar" {
+    type master;
+    file "/etc/bind/cardenal-lafalda.db";
+};
+
+zone "misto.lafalda.cordoba.dc.fi.uba.ar" {
+    type master;
+    file "/etc/bind/misto-lafalda.db";
+};
+
+zone "granadero.lafalda.cordoba.dc.fi.uba.ar" {
+    type master;
+    file "/etc/bind/granadero-lafalda.db";
+};
+ 
+zone "cordoba.dc.fi.uba.ar" {
+	type forward;
+	forwarders { 192.168.0.101; };
+};
+
+zone "0.168.192.in-addr.arpa" {
+	type master;
+	file "/etc/bind/192.168.0.rev";
+};
+
+include "/etc/bind/rndc.key";

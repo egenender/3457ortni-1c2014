@@ -1,0 +1,20 @@
+@    IN    SOA    ns.cordoba.dc.fi.uba.ar. admin.cordoba.dc.fi.uba.ar. (
+                        1		; numero de serie
+                        604800	;refresco
+                        86400		;reintento
+                        2419200	;caducidad
+                        604800 	;TTL predeterminado
+)	
+@    IN    NS    ns.cordoba.dc.fi.uba.ar.
+ns	IN 	A	192.168.0.101
+
+; DNS 1
+lafalda		IN	NS	ns1.lafalda.cordoba.dc.fi.uba.ar
+ns1.lafalda.cordoba.dc.fi.uba.ar	IN	A	192.168.0.102
+
+; DNS 2
+;calamuchita		IN	NS	ns2.calamuchita.cordoba.dc.fi.uba.ar
+;capital			IN	NS	ns2.calamuchita.cordoba.dc.fi.uba.ar
+;ns2.calamuchita.cordoba.dc.fi.uba.ar		IN	A	(dir IP DNS2)
+
+

@@ -1,0 +1,16 @@
+options {
+    allow-recursion { any; };
+};
+
+zone "lafalda.cordoba.dc.fi.uba.ar" {
+    type forward;
+    forwarders {192.168.0.102;};
+};
+
+
+controls { 
+      inet 127.0.0.1 port 953 allow { 127.0.0.1; } keys { rndc-key; }; 
+}; 
+
+include "/etc/bind/rndc.key";
+
