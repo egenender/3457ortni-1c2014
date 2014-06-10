@@ -33,4 +33,6 @@ route add -net 10.31.25.192 netmask 255.255.255.224 gw 20.86.15.133 metric 1
 route add -net 10.31.25.160 netmask 255.255.255.252 gw 20.86.15.132 metric 1
 route add -net 10.31.25.164 netmask 255.255.255.252 gw 20.86.15.132 metric 1
 route add -net 10.31.25.168 netmask 255.255.255.252 gw 20.86.15.132 metric 1
-	
+
+cp inetd.conf /etc/
+service openbsd-inetd restart

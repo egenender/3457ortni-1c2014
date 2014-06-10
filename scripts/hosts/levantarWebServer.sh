@@ -33,3 +33,5 @@ route add -net 10.31.25.192 netmask 255.255.255.224 gw 201.158.15.7 metric 1
 route add -net 10.31.25.160 netmask 255.255.255.252 gw 201.158.15.7 metric 1
 route add -net 10.31.25.164 netmask 255.255.255.252 gw 201.158.15.7 metric 1
 route add -net 10.31.25.168 netmask 255.255.255.252 gw 201.158.15.7 metric 1
+
+cp grupo2.html /var/www/
