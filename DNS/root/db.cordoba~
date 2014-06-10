@@ -8,14 +8,14 @@ $TTL	86400
 ;
 
 @	                      IN    NS   nsroot.dodo.capital
-nsroot.dodo.capital   IN    A    20.64.73.3 ; DNS ROOT
+nsroot.dodo.capital   IN    A    20.64.73.3; 192.168.0.102 ; DNS ROOT
 
 lafalda                IN    NS    ns1.espatula.lafalda
-ns1.espatula.lafalda   IN    A     192.168.0.105 ; DNS 1
+ns1.espatula.lafalda   IN    A     10.31.25.3; 192.168.0.105 ; DNS 1
 
 capital            	IN    NS    ns2.mero2.calamuchita
 calamuchita        	IN    NS    ns2.mero2.calamuchita
-ns2.mero2.calamuchita	IN    A     10.31.25.194 ; DNS 2
+ns2.mero2.calamuchita	IN    A     10.31.25.194; 192.168.0.110 ; DNS 2
 
 ; alias
 nsroot       IN    CNAME    nsroot.dodo.capital

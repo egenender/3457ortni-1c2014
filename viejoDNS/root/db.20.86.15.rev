@@ -1,0 +1,27 @@
+$TTL	604800
+@	IN	SOA	nsroot.dodo.capital.cordoba.dc.fi.uba.ar. root. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@                      IN    NS       nsroot.dodo.capital.cordoba.dc.fi.uba.ar.
+
+
+0/27			IN	NS	ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.  ; buitre (capital)
+$GENERATE 0-31  $	IN	CNAME	$.0/27
+
+32/27			IN	NS	ns1.espatula.lafalda.cordoba.dc.fi.uba.ar.  ; faisan (lafalda)
+$GENERATE 32-63  $	IN	CNAME	$.32/27
+
+64/26			IN	NS	ns1.espatula.lafalda.cordoba.dc.fi.uba.ar.  ; jilguero (lafalda)
+$GENERATE 64-127  $	IN	CNAME	$.64/26
+
+128/25			IN	NS	ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.  ; mero1 (calamuchita)
+$GENERATE 128-255  $	IN	CNAME	$.128/25
+
+
+
+
+

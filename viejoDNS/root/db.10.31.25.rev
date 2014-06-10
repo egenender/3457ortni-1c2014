@@ -1,0 +1,40 @@
+$TTL	604800
+@	IN	SOA	nsroot.dodo.capital.cordoba.dc.fi.uba.ar. root. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@                      IN    NS       nsroot.dodo.capital.cordoba.dc.fi.uba.ar.
+
+0/25         	       IN    NS       ns1.espatula.lafalda.cordoba.dc.fi.uba.ar.  ; espatula (lafalda)
+$GENERATE 0-127	   $   IN    CNAME    $.0/25
+
+128/28                 IN    NS       ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.  ; cuervo (capital)
+$GENERATE 128-143  $   IN    CNAME    $.128/28
+
+144/29                 IN    NS       ns1.espatula.lafalda.cordoba.dc.fi.uba.ar.  ; kiwi (lafalda)
+$GENERATE 144-151  $   IN    CNAME    $.144/29
+
+152/30                 IN    NS       ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.  ; golondrina (calamuchita PPP)
+$GENERATE 152-155  $   IN    CNAME    $.152/30
+
+156/30                 IN    NS       ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.  ; hornero (calamuchita PPP)
+$GENERATE 156-159  $   IN    CNAME    $.156/30
+
+160/30                 IN    NS       ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.  ; negron (calamuchita PPP)
+$GENERATE 160-163  $   IN    CNAME    $.160/30
+
+164/30                 IN    NS       ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.  ; ortega (calamuchita PPP)
+$GENERATE 164-167  $   IN    CNAME    $.164/30
+
+168/30                 IN    NS       ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.  ; paloma (calamuchita PPP)
+$GENERATE 168-171  $   IN    CNAME    $.168/30
+
+192/27                 IN    NS       ns2.mero2.calamuchita.cordoba.dc.fi.uba.ar.  ; mero2 (calamuchita)
+$GENERATE 192-223  $   IN    CNAME    $.192/27
+
+
+
+
