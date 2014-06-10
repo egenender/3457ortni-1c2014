@@ -76,3 +76,6 @@ Se dispone de tres servidores DNS, uno de primer nivel (DNS root) y dos de segun
 \end{tabular}
 
 
+Cuando alguno de estos DNS no conoce algún nombre de dominio, éste debe realizar una consulta al DNS root, el cual le responderá con la dirección del otro DNS, para así poder responder finalmente la consulta inicial. MENCIONAR ALGO SOBRE LAS CONSULTAS ITERATIVAS/RECURSIVAS. \\
+HABLAR SOBRE LOS NOMBRES DE DOMINIO
+
