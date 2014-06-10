@@ -1,13 +1,12 @@
 \section{DNS}
 
-\subsubsection{Niveles de servidores DNS}
+\subsection{Niveles de servidores DNS}
 
 Para la realización del trabajo práctico es necesario implementar el servicio de DNS, dividido en las distintas sedes de la topología, para así poder traducir nombres a direcciones IP (para permitir la comunicación) o viceversa (por ejemplo, para el uso de traceroute). \\ 
 
 Se dispone de tres servidores DNS, uno de primer nivel (DNS root) y dos de segundo nivel (llamados DNS 1 y DNS 2). El DNS 1 tiene autoridad sobre la sede La Falda y el DNS 2 sobre el resto de la red (sedes Calamuchita y Córdoba Capital). Los hosts que deseen traducir un nombre o una IP deben consultar al servidor DNS de segundo nivel que corresponda a su zona. En caso de que dicho servidor pueda realizar la traducción, transmite la consulta hacia el DNS Root. \\
 
-\subsubsection{Nombres de dominio de redes}
-
+\subsection{Nombres de dominio de redes}
 
 \begin{tabular}{|c|c|c|c|c|}
 	\hline
@@ -59,18 +58,313 @@ Se dispone de tres servidores DNS, uno de primer nivel (DNS root) y dos de segun
 	\hline
 	M2 & Mero 2 & mero2.calamuchita.cordoba.dc.fi.uba.ar & Calamuchita \\
 	\hline
-	N privada & Negrón & negron.calamuchita.cordoba.dc.fi.uba.ar & Calamuchita \\
+	N & Negrón & negron.calamuchita.cordoba.dc.fi.uba.ar & Calamuchita \\
 	\hline
-	O privada & Ortega & ortega.calamuchita.cordoba.dc.fi.uba.ar & Calamuchita \\
+	O & Ortega & ortega.calamuchita.cordoba.dc.fi.uba.ar & Calamuchita \\
 	\hline
-	P privada & Paloma & paloma.calamuchita.cordoba.dc.fi.uba.ar & Calamuchita \\
+	P & Paloma & paloma.calamuchita.cordoba.dc.fi.uba.ar & Calamuchita \\
 	\hline
-	Q1 Publica & Quebrantahuesos 1 & quebrantahuesos1.calamuchita.cordoba.dc... &  Calamuchita \\
+	Q1 & Quebrantahuesos 1 & quebrantahuesos1.calamuchita.cordoba.dc.fi.uba.ar &  Calamuchita \\
 	\hline
-	Q2 Publica & Quebrantahuesos 2 & quebrantahuesos2.calamuchita.cordoba.dc... & Calamuchita \\
+	Q2 & Quebrantahuesos 2 & quebrantahuesos2.calamuchita.cordoba.dc.fi.uba.ar & Calamuchita \\
 	\hline
-	Q3 Publica & Quebrantahuesos 3 & quebrantahuesos3.calamuchita.cordoba.dc... &  Calamuchita \\
+	Q3 & Quebrantahuesos 3 & quebrantahuesos3.calamuchita.cordoba.dc.fi.uba.ar &  Calamuchita \\
 	\hline
 \end{tabular}
 
 
+\subsection{Nombres relativos a los numeros de subred}
+
+\begin{tabular}{|c|c|c|c|c|}
+	\hline
+    Nombre de dominio & Direccion &  Sede\\
+	\hline
+	aguila.capital.cordoba.dc.fi.uba.ar & 201.158.15.0/25 & Capital \\
+	\hline
+	buitre.capital.cordoba.dc.fi.uba.ar & 20.86.15.0/27 & Capital \\
+	\hline
+	cuervo.capital.cordoba.dc.fi.uba.ar & 10.31.25.128/28 & Capital \\
+	\hline
+	dodo.capital.cordoba.dc.fi.uba.ar & 20.64.73.0/24 & Capital \\
+	\hline
+	espatula.lafalda.cordoba.dc.fi.uba.ar & 10.31.25.0/25 & La Falda \\
+	\hline
+	faisan.lafalda.cordoba.dc.fi.uba.ar & 20.86.15.32/27 & La Falda \\
+	\hline
+	golondrina.calamuchita.cordoba.dc.fi.uba.ar & 10.31.25.152/30 & Calamuchita \\
+	\hline
+	hornero.calamuchita.cordoba.dc.fi.uba.ar & 10.31.25.156/30 & Calamuchita \\
+	\hline
+	ibis1.calamuchita.cordoba.dc.fi.uba.ar & 151.40.3.192/30 & Calamuchita \\
+	\hline
+	ibis2.calamuchita.cordoba.dc.fi.uba.ar & 151.40.3.196/30 &  Calamuchita \\ 
+	\hline
+	ibis3.calamuchita.cordoba.dc.fi.uba.ar & 151.40.3.200/30 &  Calamuchita \\
+	\hline
+	ibis4.calamuchita.cordoba.dc.fi.uba.ar & 151.40.3.204/30 & Calamuchita \\
+	\hline
+	ibis5.calamuchita.cordoba.dc.fi.uba.ar & 151.40.3.208/30 &  Calamuchita \\	
+	\hline
+	ibis6.calamuchita.cordoba.dc.fi.uba.ar & 151.40.3.212/30 &  Calamuchita \\
+	\hline
+	ibis7.calamuchita.cordoba.dc.fi.uba.ar & 151.40.3.216/30 &  Calamuchita \\
+	\hline
+	ibis8.calamuchita.cordoba.dc.fi.uba.ar & 151.40.3.220/30 &  Calamuchita \\
+	\hline
+	ibis9.calamuchita.cordoba.dc.fi.uba.ar & 151.40.3.224/30 &  Calamuchita \\
+	\hline
+	ibis10.calamuchita.cordoba.dc.fi.uba.ar & 151.40.3.228/30 &  Calamuchita \\
+	\hline
+	jilguero.lafalda.cordoba.dc.fi.uba.ar & 20.86.15.64/26 &  La Falda \\
+	\hline
+	kiwi.lafalda.cordoba.dc.fi.uba.ar & 10.31.25.144/29 & La Falda \\
+	\hline
+	lechuza.calamuchita.cordoba.dc.fi.uba.ar & 20.26.29.0/24 & Calamuchita \\
+	\hline
+	mero1.calamuchita.cordoba.dc.fi.uba.ar & 20.86.15.128/25 & Calamuchita \\
+	\hline
+	mero2.calamuchita.cordoba.dc.fi.uba.ar & 10.31.25.160/27 & Calamuchita \\
+	\hline
+	negron.calamuchita.cordoba.dc.fi.uba.ar & 10.31.25.160/30 & Calamuchita \\
+	\hline
+	ortega.calamuchita.cordoba.dc.fi.uba.ar & 10.31.25.164/30 & Calamuchita \\
+	\hline
+	paloma.calamuchita.cordoba.dc.fi.uba.ar & 10.31.25.168/30 & Calamuchita \\
+	\hline
+	quebrantahuesos1.calamuchita.cordoba.dc.fi.uba.ar & 150.38.27.0/30 &  Calamuchita \\
+	\hline
+	quebrantahuesos2.calamuchita.cordoba.dc.fi.uba.ar & 150.38.27.4/30 & Calamuchita \\
+	\hline
+	quebrantahuesos3.calamuchita.cordoba.dc.fi.uba.ar & 150.38.27.8/30 &  Calamuchita \\
+	\hline
+\end{tabular}
+
+\newpage
+
+\subsubsection{Asignación de Nombres a routers, servers, hosts}
+
+\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	Nombre & Dispositivo & Interfaz & Dirección \\
+	\hline
+
+	\hline
+	web.aguila.capital & WebServer & & 201.158.15.1 \\
+	\hline
+	a.aguila.capital & Host A & & 201.158.15.2 \\
+	\hline
+	r4.aguila.capital & R4 & e0/0 & 201.158.15.3 \\
+	\hline
+	r5.aguila.capital & R5 & e0/0 & 201.158.15.4 \\
+	\hline
+	r2.aguila.capital & R2 & e0/0 & 201.158.15.5 \\
+	\hline
+	r3.aguila.capital & R3 & e0/2 & 201.158.15.6 \\
+	\hline
+	virtual.aguila.capital & Virtual A & & 201.158.15.7 \\
+	\hline
+
+	\hline
+	r1.buitre.capital  & R1 & e0/0 & 20.86.15.1 \\
+	\hline
+	r3.buitre.capital  & R3 & e0/0 & 20.86.15.2 \\
+	\hline
+
+	\hline
+	r1.cuervo.capital & R1 & e0/1 & 10.31.25.129 \\
+	\hline
+  	r3.cuervo.capital & R3 & e0/1 & 10.31.25.130 \\
+	\hline
+
+	\hline
+	r5.dodo.capital & R5 & e0/1 & 20.64.73.1 \\
+	\hline
+	r4.dodo.capital & R4 & e0/1 & 20.64.73.2 \\
+	\hline
+	nsroot.dodo.capital & DNS-ROOT & & 20.64.73.3 \\
+	\hline
+	r8.dodo.capital & R8 & e0/0 & 20.64.73.4 \\
+	\hline
+	virtual.dodo.capital & Virtual D & & 20.64.73.5 \\
+	\hline
+
+	\hline
+	ftp.espatula.lafalda & FTP-Server & & 10.31.25.1 \\
+	\hline
+	r12.espatula.lafalda & R12 & e0/0 & 10.31.25.2 \\
+	\hline
+	ns1.espatula.lafalda & DNS1 & & 10.31.25.3 \\
+	\hline
+	r15.espatula.lafalda & R15 & e0/2 & 10.31.25.4 \\
+	\hline
+	r13.espatula.lafalda & R13 & e0/1 & 10.31.25.5 \\
+	\hline
+
+	\hline
+	r13.faisan.lafalda & R13 & e0/0 & 20.86.15.33 \\
+	\hline
+	c.faisan.lafalda & Host C & & 20.86.15.34 \\
+	\hline
+	r14.faisan.lafalda & R14 & e0/1 & 20.86.15.35 \\
+	\hline
+
+	\hline
+	r10.golondrina.calamuchita & R10 & e1/2 & 10.31.25.153 \\
+	\hline
+	r13.golondrina.calamuchita & R13 & e0/2 & 10.31.25.154 \\
+	\hline
+
+	\hline
+	r8.hornero.calamuchita & R8 & e0/1 & 10.31.25.157 \\
+	\hline
+	r7.hornero.calamuchita & R7 & e1/1 & 10.31.25.158 \\
+	\hline
+
+	\hline
+	r2.ibis1.calamuchita & R2 & s1/0.1 & 151.40.3.193 \\
+	\hline
+	r17.ibis1.calamuchita & R17 & s1/0.1 & 151.40.3.194 \\
+	\hline
+
+	\hline
+	r2.ibis2.calamuchita & R2 & s1/0.2 & 151.40.3.197 \\
+	\hline
+	r16.ibis2.calamuchita & R16 & s1/0.1 & 151.40.3.198 \\
+	\hline
+
+	\hline
+	r2.ibis3.calamuchita & R2 & s1/0.3 & 151.40.3.201 \\
+	\hline
+	r9.ibis3.calamuchita & R9 & s1/0.1 & 151.40.3.202 \\
+	\hline
+\end{tabular}
+\newpage
+\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	Nombre & Dispositivo & Interfaz & Dirección \\
+	\hline
+
+	\hline
+	r2.ibis4.calamuchita & R2 & s1/0.4 & 151.40.3.205 \\
+	\hline
+	r6.ibis4.calamuchita & R6 & s1/0.1 & 151.40.3.206 \\
+	\hline
+
+	\hline
+	r17.ibis5.calamuchita & R17 & s1/0.2 & 151.40.3.209 \\
+	\hline
+	r16.ibis5.calamuchita & R16 & s1/0.2 & 151.40.3.210 \\
+	\hline
+
+	\hline
+	r17.ibis6.calamuchita & R17 & s1/0.3 & 151.40.3.213 \\
+	\hline
+	r9.ibis6.calamuchita & R9 & s1/0.2 & 151.40.3.214 \\
+	\hline
+
+	\hline
+	r17.ibis7.calamuchita & R17 & s1/0.4 & 151.40.3.217 \\
+	\hline
+	r6.ibis7.calamuchita & R6 & s1/0.2 & 151.40.3.218 \\
+	\hline
+
+	\hline
+	r16.ibis8.calamuchita & R16 & s1/0.3 & 151.40.3.221 \\
+	\hline
+	r9.ibis8.calamuchita & R9 & s1/0.3 & 151.40.3.222 \\
+	\hline
+
+	\hline
+	r16.ibis9.calamuchita & R16 & s1/0.4 & 151.40.3.225 \\
+	\hline
+	r6.ibis9.calamuchita & R6 & s1/0.3 & 151.40.3.226 \\
+	\hline
+
+	\hline
+	r9.ibis10.calamuchita & R9 & s1/0.4 & 151.40.3.229 \\
+	\hline
+	r6.ibis10.calamuchita & R6 & s1/0.4 & 151.40.3.230 \\
+	\hline
+
+	\hline
+	r17.jilguero.lafalda & R17 & e0/0 & 20.86.15.65 \\
+	\hline
+	r16.jilguero.lafalda & R16 & e0/0 & 20.86.15.66 \\
+	\hline
+	r14.jilguero.lafalda & R14 & e0/0 & 20.86.15.67 \\
+	\hline
+	r15.jilguero.lafalda & R15 & e0/0 & 20.86.15.68 \\
+	\hline
+
+	\hline
+	r15.kiwi.lafalda & R15 & e0/1 & 10.31.25.145 \\
+	\hline
+
+	\hline
+	r7.lechuza.calamuchita & R7 & e1/0 & 20.26.29.1 \\
+	\hline
+	r6.lechuza.calamuchita & R6 & e0/0 & 20.26.29.2 \\
+	\hline
+	r9.lechuza.calamuchita & R9 & e0/0 & 20.26.29.3 \\
+	\hline
+	telnet.lechuza.calamuchita & Tel-Server & & 20.26.29.129 \\
+	\hline
+
+	\hline
+	b.mero1.calamuchita & Host B & & 20.86.15.129 \\
+	\hline
+	telnet.mero1.calamuchita & Tel-Server & & 20.86.15.130 \\
+	\hline
+	r11.mero1.calamuchita & R11 & e0/0 & 20.86.15.132 \\
+	\hline
+	r10.mero1.calamuchita & R10 & e1/1 & 20.86.15.133 \\
+	\hline
+
+	\hline
+	r10.mero2.calamuchita & R10 & e1/0 & 10.31.25.193 \\
+	\hline
+	ns2.mero2.calamuchita & DNS2 & & 10.31.25.194 \\
+	\hline
+
+	\hline
+	r8.negron.calamuchita & R8 & Tunnel10 & 10.31.25.161 \\
+	\hline
+	r11.negron.calamuchita & R11 & Tunnel10 & 10.31.25.162 \\
+	\hline
+\end{tabular}
+\newpage
+\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	Nombre & Dispositivo & Interfaz & Dirección \\
+	\hline
+
+	\hline
+	r8.ortega.calamuchita & R8 & Tunnel20 & 10.31.25.165 \\
+	\hline
+	r12.ortega.calamuchita & R12 & Tunnel20 & 10.31.25.166 \\
+	\hline
+
+	\hline
+	r12.paloma.calamuchita & R12 & Tunnel30 & 10.31.25.169 \\
+	\hline
+	r11.paloma.calamuchita & R11 & Tunnel30 & 10.31.25.170 \\
+	\hline
+
+	\hline
+	r8.quebrantahuesos1.calamuchita & R8 & e0/2 & 150.38.27.1 \\
+	\hline
+	internet.quebrantahuesos1.calamuchita & INTERNET & e1/0 & 150.38.27.2 \\
+	\hline
+
+	\hline
+	r11.quebrantahuesos2.calamuchita & R11 & e0/1 & 150.38.27.5 \\
+	\hline
+	internet.quebrantahuesos2.calamuchita & INTERNET & e1/1 & 150.38.27.6 \\
+	\hline
+
+	\hline
+	r12.quebrantahuesos3.calamuchita & R12 & e0/1 & 150.38.27.9 \\
+	\hline
+	internet.quebrantahuesos3.calamuchita & INTERNET & e1/2 & 150.38.27.10 \\
+	\hline
+\end{tabular}
