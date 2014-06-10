@@ -460,6 +460,25 @@ Interface In & DLCI In & Interface Out & DLCI Out \\
 
 \input{./openvpn.tex}
 
+\section{Simulación en la Sala}
+
+
+\section{Scripts de configuración}
+Para realizar la simulación de la topología, y poder utilizar los distintos dispositivos físicos, comunicados por las interfaces taps (como ya fue explicado en secciones anteriores), se crearon scripts para automatizar la ejecución de los mismos. A continuación se detallan los distintos tipos de scripts:
+\begin{itemize}
+	\item \textbf{Servicios.sh}: Permite levantar los servicios de telnet, apache o ftp.
+	\item \textbf{pings.sh}: Realiza una secuencia de pings a dispositivos a lo largo de toda la topología. Lo utilizamos para corroborar la
+		 correcta conexión entre los dispositivos físicos con el servidor que ejecuta al GNS3, así como asegurar la correcta configuración
+		 del ruteo estático.
+	\item \textbf{levantarHostA.sh}: Se configura la interfaz tap correspondiente; se configura el ruteo estático para tal host; se copia el 
+		archivo \textbf{resol.conf} al directorio local para dejar configurado el DNS de nuestra topología (para el caso del host A, el DNS2).
+		Para los Hosts B y C se tienen análogos archivos de configuración (con los parámetros correspondientes).
+	\item \textbf{levantarWebserver.sh}: similar al caso anterior, pero en este caso además copia los archivos de configuración necesarios al
+		directorio local correspondiente. Tanto para el FTPserver como para el TelServer se cuenta con sus semejantes archivos de 
+		configuración.
+	\item \textbf{finalizarVPNs.sh}: cierra todas las conexiones taps utilizadas (del 0 al 9) en el dispositivo local.
+\end{itemize}
+
 \newpage
 \input{./anexos.tex}
 \end{document}
