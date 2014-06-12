@@ -49,7 +49,8 @@
 \contentsline {section}{\numberline {6}OpenVPN}{33}
 \contentsline {subsection}{\numberline {6.1}Servidores}{34}
 \contentsline {subsection}{\numberline {6.2}Clientes}{34}
-\contentsline {section}{\numberline {7}Anexos}{35}
-\contentsline {subsection}{\numberline {7.1}Topolog\IeC {\'\i }a de la Red}{35}
-\contentsline {subsection}{\numberline {7.2}Topolog\IeC {\'\i }a de la Red, con divisi\IeC {\'o}n de Subredes}{36}
-\contentsline {subsection}{\numberline {7.3}Diagrama de Capa 3, con direcciones IP}{37}
+\contentsline {section}{\numberline {7}Scripts de configuraci\IeC {\'o}n}{34}
+\contentsline {section}{\numberline {8}Anexos}{35}
+\contentsline {subsection}{\numberline {8.1}Topolog\IeC {\'\i }a de la Red}{35}
+\contentsline {subsection}{\numberline {8.2}Topolog\IeC {\'\i }a de la Red, con divisi\IeC {\'o}n de Subredes}{36}
+\contentsline {subsection}{\numberline {8.3}Diagrama de Capa 3, con direcciones IP}{37}

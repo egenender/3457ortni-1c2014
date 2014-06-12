@@ -396,3 +396,11 @@ foreach subreds_FR {
 151.40.3.229
 151.40.3.230
 } {ping $subreds_FR}
+
+
+tclsh
+20.26.29.129
+20.86.15.130
+foreach telnet {
+
+} {ping $telnet}
