@@ -25,32 +25,33 @@
 \contentsline {subsubsection}{\numberline {1.5.1}Host A y Webserver}{18}
 \contentsline {subsubsection}{\numberline {1.5.2}Host B}{20}
 \contentsline {subsubsection}{\numberline {1.5.3}Host C}{21}
-\contentsline {subsubsection}{\numberline {1.5.4}Telserver}{22}
-\contentsline {subsubsection}{\numberline {1.5.5}DNS1 - FTP server}{22}
-\contentsline {subsubsection}{\numberline {1.5.6}DNS2}{23}
-\contentsline {subsubsection}{\numberline {1.5.7}DNS Root}{24}
-\contentsline {section}{\numberline {2}Frame Relay}{25}
-\contentsline {subsection}{\numberline {2.1}FR}{25}
-\contentsline {section}{\numberline {3}T\IeC {\'u}neles GRE}{25}
-\contentsline {subsection}{\numberline {3.1}Configuraci\IeC {\'o}n}{25}
-\contentsline {subsubsection}{\numberline {3.1.1}R8}{25}
-\contentsline {subsubsection}{\numberline {3.1.2}R11}{26}
-\contentsline {subsubsection}{\numberline {3.1.3}R12}{26}
-\contentsline {subsubsection}{\numberline {3.1.4}Internet y Router-Internet}{27}
-\contentsline {section}{\numberline {4}VRRP}{28}
-\contentsline {subsection}{\numberline {4.1}Configuraci\IeC {\'o}n de los Routers}{28}
-\contentsline {paragraph}{R4}{28}
-\contentsline {paragraph}{R5}{29}
-\contentsline {section}{\numberline {5}DNS}{29}
-\contentsline {subsection}{\numberline {5.1}Niveles de servidores DNS}{29}
-\contentsline {subsection}{\numberline {5.2}Nombres de dominio de redes}{30}
-\contentsline {subsection}{\numberline {5.3}Nombres relativos a los numeros de subred}{31}
-\contentsline {subsubsection}{\numberline {5.3.1}Asignaci\IeC {\'o}n de Nombres a routers, servers, hosts}{32}
-\contentsline {section}{\numberline {6}OpenVPN}{33}
-\contentsline {subsection}{\numberline {6.1}Servidores}{34}
-\contentsline {subsection}{\numberline {6.2}Clientes}{34}
-\contentsline {section}{\numberline {7}Scripts de configuraci\IeC {\'o}n}{34}
-\contentsline {section}{\numberline {8}Anexos}{35}
-\contentsline {subsection}{\numberline {8.1}Topolog\IeC {\'\i }a de la Red}{35}
-\contentsline {subsection}{\numberline {8.2}Topolog\IeC {\'\i }a de la Red, con divisi\IeC {\'o}n de Subredes}{36}
-\contentsline {subsection}{\numberline {8.3}Diagrama de Capa 3, con direcciones IP}{37}
+\contentsline {subsubsection}{\numberline {1.5.4}Telserver 1}{22}
+\contentsline {subsubsection}{\numberline {1.5.5}Telserver 2}{23}
+\contentsline {subsubsection}{\numberline {1.5.6}DNS1 - FTP server}{23}
+\contentsline {subsubsection}{\numberline {1.5.7}DNS2}{24}
+\contentsline {subsubsection}{\numberline {1.5.8}DNS Root}{25}
+\contentsline {section}{\numberline {2}Frame Relay}{26}
+\contentsline {subsection}{\numberline {2.1}FR}{26}
+\contentsline {section}{\numberline {3}T\IeC {\'u}neles GRE}{26}
+\contentsline {subsection}{\numberline {3.1}Configuraci\IeC {\'o}n}{26}
+\contentsline {subsubsection}{\numberline {3.1.1}R8}{26}
+\contentsline {subsubsection}{\numberline {3.1.2}R11}{27}
+\contentsline {subsubsection}{\numberline {3.1.3}R12}{27}
+\contentsline {subsubsection}{\numberline {3.1.4}Internet y Router-Internet}{28}
+\contentsline {section}{\numberline {4}VRRP}{29}
+\contentsline {subsection}{\numberline {4.1}Configuraci\IeC {\'o}n de los Routers}{29}
+\contentsline {paragraph}{R4}{29}
+\contentsline {paragraph}{R5}{30}
+\contentsline {section}{\numberline {5}DNS}{30}
+\contentsline {subsection}{\numberline {5.1}Niveles de servidores DNS}{30}
+\contentsline {subsection}{\numberline {5.2}Nombres de dominio de redes}{31}
+\contentsline {subsection}{\numberline {5.3}Nombres relativos a los numeros de subred}{32}
+\contentsline {subsubsection}{\numberline {5.3.1}Asignaci\IeC {\'o}n de Nombres a routers, servers, hosts}{33}
+\contentsline {section}{\numberline {6}OpenVPN}{34}
+\contentsline {subsection}{\numberline {6.1}Servidores}{35}
+\contentsline {subsection}{\numberline {6.2}Clientes}{35}
+\contentsline {section}{\numberline {7}Scripts de configuraci\IeC {\'o}n}{35}
+\contentsline {section}{\numberline {8}Anexos}{36}
+\contentsline {subsection}{\numberline {8.1}Topolog\IeC {\'\i }a de la Red}{36}
+\contentsline {subsection}{\numberline {8.2}Topolog\IeC {\'\i }a de la Red, con divisi\IeC {\'o}n de Subredes}{37}
+\contentsline {subsection}{\numberline {8.3}Diagrama de Capa 3, con direcciones IP}{38}
